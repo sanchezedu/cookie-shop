@@ -163,7 +163,9 @@
             0%, 100% { transform: translateY(0) rotate(0deg); }
             50% { transform: translateY(-20px) rotate(5deg); }
         }
-        .hero-content { position: relative; z-index: 2; max-width: 650px; }
+        .hero-content { position: relative; z-index: 2; max-width: 500px; }
+        .hero-image { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); width: 45%; max-width: 500px; z-index: 2; }
+        @media(max-width: 992px) { .hero-image { display: none; } }
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -338,11 +340,14 @@
             <div class="hero-content">
                 <div class="hero-badge fade-up">✨ 100% Artesanales</div>
                 <h1 class="fade-up">Galletas que<br><span class="gradient-text">Enamoran</span></h1>
-                <p class="fade-up">Recetas exclusivas, ingredientes premium. Delicia crujiente en cada mordida. ¡No podrás comer solo una!</p>
+                <p class="fade-up">Recetas exclusivas, ingredientes premium. Delicia crujiente en cada mordida.</p>
                 <div class="fade-up" style="display:flex;gap:15px;flex-wrap:wrap;">
                     <a href="#pedidos" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Ordenar Ahora</a>
                     <a href="#sabores" class="btn" style="border:2px solid rgba(255,255,255,0.3);color:var(--white);">Ver Sabores</a>
                 </div>
+            </div>
+            <div class="hero-image fade-up">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600" alt="Galletas" style="width:100%;border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,0.4);">
             </div>
         </div>
     </section>
@@ -355,39 +360,45 @@
             </div>
             <div class="cookies-grid">
                 <div class="cookie-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400" alt="Chocolate" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🍪</span>
                     <h3>Classic Chocolate</h3>
                     <p>La receta original con chispas de chocolate belge.</p>
                     <div class="cookie-price">$3.50</div>
                 </div>
                 <div class="cookie-card fade-up" style="animation-delay:0.1s">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400" alt="Red Velvet" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🍪</span>
                     <h3>Red Velvet</h3>
                     <p>Con trozos de chocolate blanco y toque de vainilla.</p>
                     <div class="cookie-price">$4.00</div>
                 </div>
                 <div class="cookie-card fade-up" style="animation-delay:0.2s">
+                    <img src="https://images.unsplash.com/photo-1590080875897-6e82de783a3c?w=400" alt="Peanut Butter" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🥜</span>
                     <h3>Peanut Butter</h3>
                     <p>Crema de maní artesanal con chunks de chocolate.</p>
                     <div class="cookie-price">$3.75</div>
                 </div>
                 <div class="cookie-card fade-up" style="animation-delay:0.3s">
+                    <img src="https://images.unsplash.com/photo-1490567674924-0e9567e5e3a4?w=400" alt="Oatmeal" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🍩</span>
                     <h3>Oatmeal Raisin</h3>
                     <p>Avena con pasas y nueces.</p>
                     <div class="cookie-price">$3.25</div>
                 </div>
                 <div class="cookie-card fade-up" style="animation-delay:0.4s">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400" alt="Double Fudge" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🍫</span>
                     <h3>Double Fudge</h3>
                     <p>Doble chocolate para amantes del cacao puro.</p>
                     <div class="cookie-price">$4.25</div>
                 </div>
                 <div class="cookie-card fade-up" style="animation-delay:0.5s">
+                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400" alt="Lemon" style="width:100%;height:180px;object-fit:cover;border-radius:16px;margin-bottom:15px;">
                     <span class="cookie-emoji">🍋</span>
                     <h3>Lemon White</h3>
-                    <p>Limón fresco con chocolate blanco reconfortante.</p>
+                    <p>Limón fresco con chocolate blanco.</p>
                     <div class="cookie-price">$3.50</div>
                 </div>
             </div>
