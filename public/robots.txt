@@ -1,0 +1,5 @@
+# Robots.txt
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Sitemap: https://cookie-shop-kappa.vercel.app/sitemap.xml
