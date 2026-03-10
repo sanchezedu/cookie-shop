@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', sans-serif; background: #1c1917; color: white; }
+h1, h2, h3 { font-family: 'Fredoka', sans-serif; }
+
+.whatsapp-float, .floating-cart { position: fixed; bottom: 25px; right: 25px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s ease; }
+.floating-cart { background: linear-gradient(135deg, #ec4899, #be185d); animation: bounce 2s infinite; right: 100px; }
+.whatsapp-float:hover, .floating-cart:hover { transform: scale(1.1); }
+.whatsapp-float i, .floating-cart i { color: white; font-size: 28px; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
