@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+// Cookie Crush - Updated 2026-03-09
 // Data - Cookie Crush
 const cookies = [
   {
